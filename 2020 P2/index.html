@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset "UTF-8">
+    <meta name = "viewport", content="width=device-width, initial-scale=1.0">
+    <title>People</title> 
+
+</head>
+<body>
+    {%for i in data%}
+        <p>
+            Full Name: {{i[0]}} <br>
+            Screen Name: {{i[1]}} <br>
+            Identity: {{i[2]}} <br>
+            <br>
+        </p>
+    {%endfor%}
+</body>
+</html>
