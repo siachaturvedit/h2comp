@@ -1,0 +1,17 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+    <title>colours table</title>
+</head>
+<body>
+    <table border="1">
+        {%for i in colours_2d%}
+        <tr>
+            {%for j in i%}
+            <td style="background-color: {{j}}; width:40px; height:40px;"></td>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+</body>
